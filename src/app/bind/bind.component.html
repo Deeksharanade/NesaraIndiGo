@@ -24,7 +24,7 @@
         <tr  colspan="3" style="font-size: 11px; padding-top: 7px; padding-bottom: 7px; font-family: Arial, Helvetica, sans-serif; color: white; text-align: left; 
         background-color:#3943A2;">
         
-            <td  style="font-size: 11px;"> Passenger Name </td>
+            <td  style="font-size: 11px; padding-top: 4px; padding-bottom: 4px;"> Passenger Name </td>
             <td  style="font-size: 11px;">Ticket number</td>
             <td  style="font-size: 11px;">
                 Flight flyer no.
@@ -56,16 +56,16 @@
     <div style="padding-left: 5px; padding-right: 5px;" >
         <table  style=" border: 1px solid black; 
         text-align: center;  width: 100%; height: 100%;">
-            <tr  colspan="3" style="font-size: 11px; padding-top: 7px; padding-bottom: 7px; font-family: Arial, Helvetica, sans-serif; color: white; text-align: left; 
+            <tr  colspan="3" style="font-size: 11px; padding-top: 4px; padding-bottom: 4px; font-family: Arial, Helvetica, sans-serif; color: white; text-align: left; 
             background-color:#3943A2;">
-                <td  style="font-size: 11px;"> Flight </td>
+                <td  style="font-size: 11px; padding-top: 4px; padding-bottom: 4px;"> Flight </td>
                 <td  style="font-size: 11px;">Departure</td>
                 <td  style="font-size: 11px;">Arrival</td> 
                 <td  style="font-size: 11px;">Status</td>
             </tr>
           
             <tr class="travel" *ngFor="let another of invoice.anothers; let i=index">
-                <td style="  text-align: left;">&nbsp;<img src="assets/img/logo.jpeg"  alt=""   height="25px" width="55px"> 
+                <td style="  text-align: left;">&nbsp;<img src="data:image/png;base64,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"  alt=""   height="35px" width="45px"> 
                    <textarea style="  border-color: white; font-size: 11px;" id="ADDITIONAL" name="ADDITIONAL" rows="10" cols="50"></textarea></td>
                 <td style="float: left;"> <br>
                     <textarea style=" padding-top: 30px; font-size: 11px;" id="ADDITIONAL" name="ADDITIONAL" rows="10" cols="30"></textarea></td>
@@ -88,7 +88,7 @@
     
     <div >
         <table  style=" border: 1px solid black; text-align: center;  width: 100%; height: 100%;">
-            <th  colspan="3" style="font-size: 11px; padding-top: 7px; padding-bottom: 7px; font-family: Arial, Helvetica, sans-serif; color: white; text-align: left; 
+            <th  colspan="3" style="font-size: 11px; padding-top: 4px; padding-bottom: 4px; font-family: Arial, Helvetica, sans-serif; color: white; text-align: left; 
             background-color:#3943A2;">  Payment Details</th>
 
             <tr class="col-4 travel"  >
@@ -97,13 +97,12 @@
                     K3/GST: <br>
                     Fee & Surcharge <br>
                     <b>Total Amount:</b> </td>
-                <td style="text-align: left;" >
-                    <input name="fee" style="font-size: 10px; text-align: left;height: 20px; width: 100px; " [(ngModel)]="fee1"  id="val1" type="number" >Rs <br>            
-                    <input name="fee" style="font-size: 10px; text-align: left;height: 20px;width: 100px;  " [(ngModel)]="fee2"  id="val1" type="number" >Rs <br>
-                    <input name="fee" style="font-size: 10px; text-align: left;height: 20px; width: 100px; " [(ngModel)]="fee3" #box3 (keyup.enter)="onEnter1()"  id="val1" type="number" > Rs <br>
-<span >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs </span>
-    <span style="float: left; font-size: 10px;"><b>{{total | number: '1.0-0'}}</b></span> <br>  </td>
+                <td style="text-align: right;" >
+                    <input name="fee" style="font-size: 10px; text-align: right;height: 20px; width: 100px; " [(ngModel)]="fee1"  id="val1" type="number" >Rs <br>            
+                    <input name="fee" style="font-size: 10px; text-align: right;height: 20px;width: 100px;  " [(ngModel)]="fee2"  id="val1" type="number" >Rs <br>
+                    <input name="fee" style="font-size: 10px; text-align: right;height: 20px; width: 100px; " [(ngModel)]="fee3" #box3 (keyup.enter)="onEnter1()"  id="val1" type="number" >Rs <br>
+
+    <span style=" font-size: 10px;"><b  style=" font-size: 13px;">{{total | number: '1.0-0'}}</b></span> &nbsp;&nbsp;&nbsp; Rs<br>   </td>
                     
                 <br>
             
