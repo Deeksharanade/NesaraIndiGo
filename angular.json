@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IndiGo"
+    }
+  },
+  "defaultProject": "IndiGo",
+  "cli": {
+    "analytics": "54edafb6-b7c2-4ccc-9d12-ca09da1ab7e7"
+  }
 }
